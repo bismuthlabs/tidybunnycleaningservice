@@ -73,10 +73,10 @@ export default function PricingPage() {
             <p className="text-foreground/70 mb-6 text-sm">Recurring maintenance</p>
             <div className="text-3xl font-bold text-accent mb-6">From GHS 80/visit</div>
             <ul className="space-y-3 mb-8 text-sm">
-              <li className="flex items-start">
+              {/* <li className="flex items-start">
                 <Check className="h-5 w-5 text-accent mr-3 flex-shrink-0 mt-0.5" />
                 <span className="text-foreground/80">10% discount</span>
-              </li>
+              </li> */}
               <li className="flex items-start">
                 <Check className="h-5 w-5 text-accent mr-3 flex-shrink-0 mt-0.5" />
                 <span className="text-foreground/80">Priority booking</span>
@@ -98,10 +98,10 @@ export default function PricingPage() {
             <p className="text-foreground/70 mb-6 text-sm">Maximum consistency</p>
             <div className="text-3xl font-bold text-accent mb-6">From GHS 70/visit</div>
             <ul className="space-y-3 mb-8 text-sm">
-              <li className="flex items-start">
+            {/* `  <li className="flex items-start">
                 <Check className="h-5 w-5 text-accent mr-3 flex-shrink-0 mt-0.5" />
                 <span className="text-foreground/80">15% discount</span>
-              </li>
+              </li>` */}
               <li className="flex items-start">
                 <Check className="h-5 w-5 text-accent mr-3 flex-shrink-0 mt-0.5" />
                 <span className="text-foreground/80">Dedicated cleaner</span>
@@ -185,11 +185,11 @@ export default function PricingPage() {
           </motion.div>
         </div>
 
-        <div className="max-w-3xl mx-auto">
+        {/* <div className="max-w-3xl mx-auto">
           <p className="text-center text-foreground/70 text-sm">
             * Recurring turnovers (weekly/bi-weekly) receive 10-20% discounts. Multi-property hosts get custom rates.
           </p>
-        </div>
+        </div> */}
       </Section>
 
       {/* ADD-ONS */}

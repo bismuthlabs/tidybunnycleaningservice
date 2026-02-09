@@ -33,10 +33,10 @@ export default function ForHomesPage() {
       q: 'What if I\'m not home during cleaning?',
       a: 'No problem. Many clients leave us a key or access code. All our staff are background-checked and fully insured.',
     },
-    {
-      q: 'Do you offer recurring discounts?',
-      a: 'Yes. Weekly and bi-weekly clients receive priority booking and consistent team assignment for better results.',
-    },
+    // {
+    //   q: 'Do you offer recurring discounts?',
+    //   a: 'Yes. Weekly and bi-weekly clients receive priority booking and consistent team assignment for better results.',
+    // },
     {
       q: 'How do I schedule?',
       a: 'Simply fill out our quick quote form or call us. We\'ll confirm availability and send you pricing and scheduling details.',
@@ -189,10 +189,10 @@ export default function ForHomesPage() {
                 <span className="text-accent mr-2">✓</span>
                 Same team every visit
               </li>
-              <li className="flex items-start">
+              {/* <li className="flex items-start">
                 <span className="text-accent mr-2">✓</span>
                 10% discount
-              </li>
+              </li> */}
             </ul>
             <Link href="/quote">
               <Button size="lg" className="w-full bg-accent hover:bg-accent/90 text-accent-foreground">
@@ -213,10 +213,10 @@ export default function ForHomesPage() {
                 <span className="text-accent mr-2">✓</span>
                 Dedicated team
               </li>
-              <li className="flex items-start">
+              {/* <li className="flex items-start">
                 <span className="text-accent mr-2">✓</span>
                 15% discount
-              </li>
+              </li> */}
             </ul>
             <Link href="/quote">
               <Button size="lg" className="w-full bg-accent hover:bg-accent/90 text-accent-foreground">

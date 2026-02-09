@@ -306,15 +306,6 @@ function ServicesAirbnbSection() {
   return (
     <Section id="services">
       <div className="mx-auto max-w-6xl">
-        {/* <div className="text-center">
-          <h2 className="text-4xl sm:text-5xl font-bold text-primary">
-            Categories tailored to your unique needs.
-          </h2>
-          <p className="mt-4 text-foreground/60 max-w-2xl mx-auto">
-            Pick a category—then browse services like listings. Clean, premium, and designed for quick decisions.
-          </p>
-        </div> */}
-
         <div className="mt-">
           <CategoryTabs value={active} onChange={setActive} />
         </div>
@@ -324,10 +315,10 @@ function ServicesAirbnbSection() {
           {...fadeInUp}
           className="flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between"
         >
-          {/* <div>
-            <p className="text-xl font-semibold text-primary">{activeCategory?.label}</p>
+          <div>
+            {/* <p className="text-xl font-semibold text-primary">{activeCategory?.label}</p> */}
             <p className="text-sm text-foreground/60">{activeCategory?.hint}</p>
-          </div> */}
+          </div>
 
           {/* <div className="flex items-center gap-2">
             <Link href="/quote">
@@ -361,7 +352,9 @@ export default function Home() {
       {/* PARALLAX HERO SECTION */}
       <ParallaxHero
         headline="Cleaning Service for Homes & Short-Stays in Kumasi."
-        subheading="Tidy Bunny delivers a calm, sparkling home—cleaned with joy, precision, and respect for your time. Ideal for busy professionals, high-income households, guest houses, hotels, and Airbnbs that must always look ready."
+        subheading="Tidy Bunny Cleaning Service is a reliable and detailed-oriented cleaning service committed to delivering spotless, healthy, and refereshing spaces. We provide high quality residential and commercial cleaning using safe and effective methods tailored to each clients needs. With Tidy Bunny, cleaning is not just a service - it's a standard."
+        // | Tidy Bunny delivers a calm, sparkling home—cleaned with joy, precision, and respect for your time. Ideal for busy professionals, high-income households, guest houses, hotels, and Airbnbs that must always look ready.
+        
         backgroundImage="/anton-SnKfmC1I9fU-unsplash.jpg"
       />
 
@@ -405,7 +398,7 @@ export default function Home() {
       </Section>
 
       {/* TURNOVER STANDARD */}
-      <Section>
+      {/* <Section>
         <h2 className="text-4xl sm:text-5xl font-bold text-center mb-4 text-primary">
           Turnover Standard
         </h2>
@@ -439,7 +432,7 @@ export default function Home() {
             </motion.div>
           ))}
         </div>
-      </Section>
+      </Section> */}
 
       {/* HOW IT WORKS */}
       <Section className="bg-secondary/20">

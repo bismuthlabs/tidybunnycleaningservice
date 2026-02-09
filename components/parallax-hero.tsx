@@ -112,16 +112,16 @@ export function ParallaxHero({
                   initial={reduceMotion ? { opacity: 1 } : { opacity: 0, y: 14 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.7, ease: 'easeOut', delay: 0.05 }}
-                  className="text-balance text-4xl text-center sm:text-5xl lg:text-6xl font-semibold tracking-[-0.02em] text-white"
+                  className="text-secondary text-balance text-4xl text-center sm:text-5xl lg:text-6xl font-semibold tracking-[-0.02em] uppercase leading-tight"
                 >
-                  {headline}
+                  Cleaning Service <span className='block text-[45%] norm text-background'>for Homes & Short-Stays</span>
                 </motion.h1>
 
                 <motion.p
                   initial={reduceMotion ? { opacity: 1 } : { opacity: 0, y: 14 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.7, ease: 'easeOut', delay: 0.12 }}
-                  className="mt-5 max-w-2xl m-auto text-center text-pretty text-base sm:text-lg hidden md:block leading-relaxed text-white/80"
+                  className="mt-5 max-w-2xl m-auto text-center text-pretty text-sm sm:text-lg md:block leading-relaxed text-white/80"
                 >
                   {subheading}
                 </motion.p>

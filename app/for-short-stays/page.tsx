@@ -32,10 +32,10 @@ export default function ForShortStaysPage() {
       q: 'What if there\'s damage or excessive mess?',
       a: 'We communicate immediately. Standard cleaning covers normal use. Damage or deep stains are noted and discussed before additional charges.',
     },
-    {
-      q: 'Do you offer recurring discounts for hosts?',
-      a: 'Yes. Properties with weekly or bi-weekly turnovers receive priority booking, consistent team, and discounted rates.',
-    },
+    // {
+    //   q: 'Do you offer recurring discounts for hosts?',
+    //   a: 'Yes. Properties with weekly or bi-weekly turnovers receive priority booking, consistent team, and discounted rates.',
+    // },
     {
       q: 'How do I schedule turnover cleanings?',
       a: 'Contact us with your calendar. We integrate with your booking system or can work on a recurring schedule.',
@@ -240,10 +240,10 @@ export default function ForShortStaysPage() {
             <h3 className="text-2xl font-bold text-primary mb-2">Multi-Property</h3>
             <p className="text-foreground/70 mb-6">For property managers with multiple units.</p>
             <ul className="text-sm text-foreground/80 text-left space-y-2 mb-6">
-              <li className="flex items-start">
+              {/* <li className="flex items-start">
                 <span className="text-accent mr-2">✓</span>
                 20% discount
-              </li>
+              </li> */}
               <li className="flex items-start">
                 <span className="text-accent mr-2">✓</span>
                 Customized schedule

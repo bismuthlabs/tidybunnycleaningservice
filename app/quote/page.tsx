@@ -57,11 +57,11 @@ export default function QuotePage() {
     }
 
     // Frequency discounts
-    if (formData.frequency === 'biweekly') {
-      basePrice *= 0.9 // 10% discount
-    } else if (formData.frequency === 'weekly') {
-      basePrice *= 0.85 // 15% discount
-    }
+    // if (formData.frequency === 'biweekly') {
+    //   basePrice *= 0.9 // 10% discount
+    // } else if (formData.frequency === 'weekly') {
+    //   basePrice *= 0.85 // 15% discount
+    // }
 
     // Add-ons
     let addOnsCost = 0
@@ -205,8 +205,8 @@ export default function QuotePage() {
                   </SelectTrigger>
                   <SelectContent>
                     <SelectItem value="onetime">One-Time</SelectItem>
-                    <SelectItem value="biweekly">Bi-Weekly (10% discount)</SelectItem>
-                    <SelectItem value="weekly">Weekly (15% discount)</SelectItem>
+                    <SelectItem value="biweekly">Bi-Weekly</SelectItem>
+                    <SelectItem value="weekly">Weekly</SelectItem>
                   </SelectContent>
                 </Select>
               </div>
