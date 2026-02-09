@@ -16,7 +16,7 @@ export function Hero({ headline, subheading, children }: HeroProps) {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.8 }}
-      className="relative min-h-screen overflow-hidden pt-20 pb-20"
+      className="relative overflow-hidden pt-20 pb-20"
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <motion.div

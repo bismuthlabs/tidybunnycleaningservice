@@ -86,14 +86,14 @@ export function ParallaxHero({
 
       {/* Content */}
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="min-h-[92svh] py-16 sm:py-20 lg:py-24 flex items-center">
+        <div className="min-h-[72vh] py-16 sm:py-20 lg:py-24 flex items-center">
           <div className="w-full">
             {/* Eyebrow / location badge */}
             <motion.div
               initial={reduceMotion ? { opacity: 1 } : { opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, ease: 'easeOut' }}
-              className="mb-6 flex flex-wrap justify-center md:justify-normal items-center gap-3"
+              className="mb-6 flex flex-wrap justify-center items-center gap-3"
             >
               <div className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/10 px-3 py-1.5 text-xs sm:text-sm text-white/85 backdrop-blur">
                 <span className="h-1.5 w-1.5 rounded-full bg-amber-300/80" />
@@ -105,14 +105,14 @@ export function ParallaxHero({
               </div>
             </motion.div>
 
-            <div className="grid gap-10 lg:grid-cols-12 lg:items-end">
+            <div className="gri gap-10 lg:grid-cols-12 lg:items-en flex justify-center">
               {/* Left: Primary message */}
               <div className="lg:col-span-7">
                 <motion.h1
                   initial={reduceMotion ? { opacity: 1 } : { opacity: 0, y: 14 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.7, ease: 'easeOut', delay: 0.05 }}
-                  className="text-balance text-4xl text-center md:text-start sm:text-5xl lg:text-6xl font-semibold tracking-[-0.02em] text-white"
+                  className="text-balance text-4xl text-center sm:text-5xl lg:text-6xl font-semibold tracking-[-0.02em] text-white"
                 >
                   {headline}
                 </motion.h1>
@@ -121,7 +121,7 @@ export function ParallaxHero({
                   initial={reduceMotion ? { opacity: 1 } : { opacity: 0, y: 14 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.7, ease: 'easeOut', delay: 0.12 }}
-                  className="mt-5 max-w-2xl text-pretty text-base sm:text-lg hidden md:block leading-relaxed text-white/80"
+                  className="mt-5 max-w-2xl m-auto text-center text-pretty text-base sm:text-lg hidden md:block leading-relaxed text-white/80"
                 >
                   {subheading}
                 </motion.p>
@@ -131,7 +131,7 @@ export function ParallaxHero({
                   initial={reduceMotion ? { opacity: 1 } : { opacity: 0, y: 10 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6, ease: 'easeOut', delay: 0.2 }}
-                  className="mt-8 flex flex-col sm:flex-row gap-3 sm:gap-4"
+                  className="mt-8 flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center"
                 >
                   {onQuoteClick ? (
                     <Button
@@ -182,7 +182,7 @@ export function ParallaxHero({
                 </motion.div>
 
                 {/* Chips */}
-                <motion.div
+                {/* <motion.div
                   initial={reduceMotion ? { opacity: 1 } : { opacity: 0, y: 8 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6, ease: 'easeOut', delay: 0.28 }}
@@ -191,11 +191,11 @@ export function ParallaxHero({
                   {chips.map((label, i) => (
                     <Chip key={label} label={label} delay={0.3 + i * 0.06} />
                   ))}
-                </motion.div>
+                </motion.div> */}
               </div>
 
               {/* Right: Trust / premium panel */}
-              <motion.aside
+              {/* <motion.aside
                 initial={reduceMotion ? { opacity: 1 } : { opacity: 0, y: 16 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.7, ease: 'easeOut', delay: 0.18 }}
@@ -247,7 +247,7 @@ export function ParallaxHero({
                     </div>
                   </div>
                 </div>
-              </motion.aside>
+              </motion.aside> */}
             </div>
           </div>
         </div>
