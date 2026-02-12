@@ -37,14 +37,14 @@ import { Section } from '@/components/section'
 const fadeInUp = {
   initial: { opacity: 0, y: 18 },
   whileInView: { opacity: 1, y: 0 },
-  transition: { duration: 0.6, ease: 'easeOut' },
+  transition: { duration: 0.6, ease: [0.16, 1, 0.3, 1] as const },
   viewport: { once: true },
 }
 
 const fadeInScale = {
   initial: { opacity: 0, scale: 0.97 },
   whileInView: { opacity: 1, scale: 1 },
-  transition: { duration: 0.6, ease: 'easeOut' },
+  transition: { duration: 0.6, ease: [0.16, 1, 0.3, 1] as const },
   viewport: { once: true },
 }
 
