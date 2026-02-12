@@ -1,10 +1,10 @@
-'use client'
+"use client";
 
-import Link from 'next/link'
-import { Sparkles } from 'lucide-react'
+import Link from "next/link";
+import { Sparkles } from "lucide-react";
 
 export function Footer() {
-  const currentYear = new Date().getFullYear()
+  const currentYear = new Date().getFullYear();
 
   return (
     <footer className="border-t border-border bg-secondary/20 py-16">
@@ -12,10 +12,18 @@ export function Footer() {
         <div className="grid gap-8 md:grid-cols-4 mb-8">
           {/* Brand */}
           <div>
-            <Link href="/" className="inline-flex items-center gap-2 mb-4 group">
-              <Sparkles className="h-6 w-6 text-accent group-hover:scale-110 transition-transform" />
-              <span className="text-xl font-bold text-primary">Tidy Bunny</span>
-            </Link>
+            {/* Center: Logo */}
+            <div className="flex justify-start">
+              <Link href="/" className="flex items-center gap-2 group">
+                <img
+                  src="/tidybunnylogo.jpeg"
+                  alt="Tidy Bunny"
+                  width={100}
+                  height={10}
+                  className="h-16 md:h-20 object-cover md:w-16 w-20 group-hover:scale-110 transition-transform"
+                />
+              </Link>
+            </div>
             <p className="text-sm text-foreground/70">
               Premium cleaning for homes and short-stays in Kumasi.
             </p>
@@ -26,22 +34,34 @@ export function Footer() {
             <h4 className="font-semibold text-primary mb-4">Services</h4>
             <ul className="space-y-2 text-sm text-foreground/70">
               <li>
-                <Link href="/services" className="hover:text-accent transition-colors">
+                <Link
+                  href="/services"
+                  className="hover:text-accent transition-colors"
+                >
                   All Services
                 </Link>
               </li>
               <li>
-                <Link href="/for-homes" className="hover:text-accent transition-colors">
+                <Link
+                  href="/for-homes"
+                  className="hover:text-accent transition-colors"
+                >
                   Home Cleaning
                 </Link>
               </li>
               <li>
-                <Link href="/for-short-stays" className="hover:text-accent transition-colors">
+                <Link
+                  href="/for-short-stays"
+                  className="hover:text-accent transition-colors"
+                >
                   Turnover Cleaning
                 </Link>
               </li>
               <li>
-                <Link href="/pricing" className="hover:text-accent transition-colors">
+                <Link
+                  href="/pricing"
+                  className="hover:text-accent transition-colors"
+                >
                   Pricing
                 </Link>
               </li>
@@ -53,17 +73,26 @@ export function Footer() {
             <h4 className="font-semibold text-primary mb-4">Company</h4>
             <ul className="space-y-2 text-sm text-foreground/70">
               <li>
-                <Link href="/about" className="hover:text-accent transition-colors">
+                <Link
+                  href="/about"
+                  className="hover:text-accent transition-colors"
+                >
                   About Us
                 </Link>
               </li>
               <li>
-                <Link href="/contact" className="hover:text-accent transition-colors">
+                <Link
+                  href="/contact"
+                  className="hover:text-accent transition-colors"
+                >
                   Contact
                 </Link>
               </li>
               <li>
-                <Link href="/quote" className="hover:text-accent transition-colors">
+                <Link
+                  href="/quote"
+                  className="hover:text-accent transition-colors"
+                >
                   Get a Quote
                 </Link>
               </li>
@@ -75,7 +104,10 @@ export function Footer() {
             <h4 className="font-semibold text-primary mb-4">Contact</h4>
             <ul className="space-y-2 text-sm text-foreground/70">
               <li>
-                <a href="tel:+233595236285" className="hover:text-accent transition-colors">
+                <a
+                  href="tel:+233595236285"
+                  className="hover:text-accent transition-colors"
+                >
                   059 523 6285
                 </a>
               </li>
@@ -90,7 +122,8 @@ export function Footer() {
                 </a>
               </li>
               <li className="text-foreground/70">
-                Estes Park Street<br />
+                Estes Park Street
+                <br />
                 Kumasi
               </li>
             </ul>
@@ -110,5 +143,5 @@ export function Footer() {
         </div>
       </div>
     </footer>
-  )
+  );
 }
