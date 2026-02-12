@@ -95,14 +95,14 @@ export function ParallaxHero({
             </motion.div>
 
             <div className="mx-auto max-w-4xl">
-              <div className="rounded-3xl border border-white/10 bg-black/20 p-6 sm:p-10 backdrop-blur-sm shadow-[0_18px_60px_rgba(0,0,0,0.35)]">
+              <div>
                 <motion.h1
                   initial={reduceMotion ? { opacity: 1 } : { opacity: 0, y: 14 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] as const, delay: 0.05 }}
-                  className="text-balance text-4xl text-center sm:text-5xl lg:text-6xl font-semibold tracking-[-0.02em] leading-tight text-white"
+                  className="text-balance text-4xl text-center sm:text-5xl lg:text-6xl font-semibold tracking-[-0.02em] leading-tight text-primary-foreground"
                 >
-                  {headline}
+                  Cleaning Service <span className='text-lg block font-medium'>for Homes & Short-Stays in Kumasi.</span>
                 </motion.h1>
 
                 <motion.p
@@ -115,7 +115,7 @@ export function ParallaxHero({
                 </motion.p>
 
                 {/* Chips */}
-                <div className="mt-6 flex flex-wrap justify-center gap-2">
+                {/* <div className="mt-6 flex flex-wrap justify-center gap-2">
                   {chips.map((label) => (
                     <span
                       key={label}
@@ -124,10 +124,10 @@ export function ParallaxHero({
                       {label}
                     </span>
                   ))}
-                </div>
+                </div> */}
 
                 {/* Trust row */}
-                <div className="mt-8 grid gap-2 sm:grid-cols-2">
+                {/* <div className="mt-8 grid gap-2 sm:grid-cols-2">
                   {trust.map((t) => {
                     const Icon = t.icon
                     return (
@@ -142,7 +142,7 @@ export function ParallaxHero({
                       </div>
                     )
                   })}
-                </div>
+                </div> */}
 
                 {/* CTAs */}
                 <motion.div
@@ -155,7 +155,7 @@ export function ParallaxHero({
                     <Button
                       size="lg"
                       onClick={onQuoteClick}
-                      className="h-12 px-6 rounded-xl bg-white text-black hover:bg-white/90 shadow-[0_10px_30px_rgba(0,0,0,0.35)]"
+                      className="h-12 px-6 rounded bg-white text-black hover:bg-white/90 shadow-[0_10px_30px_rgba(0,0,0,0.35)]"
                     >
                       Request a Quote
                     </Button>
@@ -163,7 +163,7 @@ export function ParallaxHero({
                     <Link href="/quote" className="w-full sm:w-auto">
                       <Button
                         size="lg"
-                        className="w-full sm:w-auto h-12 px-6 rounded-xl bg-white text-black hover:bg-white/90 shadow-[0_10px_30px_rgba(0,0,0,0.35)]"
+                        className="w-full sm:w-auto h-12 px-6 rounded bg-white text-black hover:bg-white/90 shadow-[0_10px_30px_rgba(0,0,0,0.35)]"
                       >
                         Request a Quote
                       </Button>
