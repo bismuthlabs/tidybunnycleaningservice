@@ -352,11 +352,11 @@ function ServiceDetailsModal({
       <DialogContent className="max-w-4xl p-0 overflow-hidden">
         {/* Sticky top bar */}
         <div className="sticky top-0 z-20 flex items-center justify-between gap-4 border-b border-border bg-background/90 px-4 py-3 backdrop-blur">
-          <div className="min-w-0">
-            <DialogHeader className="space-y-0">
+          <div className="max-w-[60%] truncate text-sm font-medium">
+            <DialogHeader className="space-y-0 text-left">
               <DialogTitle className="truncate text-base sm:text-lg">{item.title}</DialogTitle>
             </DialogHeader>
-            <p className="truncate text-xs sm:text-sm text-foreground/60">{item.subtitle}</p>
+            {/* <p className="truncate text-xs sm:text-sm text-foreground/60">{item.subtitle}</p> */}
           </div>
 
           <DialogClose asChild>
@@ -371,7 +371,7 @@ function ServiceDetailsModal({
         </div>
 
         {/* Scrollable body */}
-        <div className="max-h-[78vh] overflow-y-auto">
+        <div className="max-h-[50vh] overflow-y-auto">
           {/* Image hero */}
           <div className="relative aspect-[16/9]">
             <Image
@@ -486,7 +486,7 @@ function ServiceDetailsModal({
         <div className="border-t border-border bg-background/90 px-4 py-3 backdrop-blur">
           <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
             <p className="text-xs text-foreground/60">
-              Ready? Generate your quote on the Quote page and send it via WhatsApp.
+              Ready? Generate your quote and send it via WhatsApp.
             </p>
             <div className="flex flex-col sm:flex-row gap-2">
               <Link href="/quote" className="w-full sm:w-auto">
@@ -495,11 +495,11 @@ function ServiceDetailsModal({
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
               </Link>
-              <Link href={learnMoreHref} className="w-full sm:w-auto">
+              {/* <Link href={learnMoreHref} className="w-full sm:w-auto">
                 <Button variant="outline" className="w-full sm:w-auto rounded-xl">
                   {learnMoreLabel}
                 </Button>
-              </Link>
+              </Link> */}
             </div>
           </div>
         </div>
@@ -589,14 +589,14 @@ export function ServicesAirbnbSection() {
             </p>
           </div>
 
-          <div className="flex items-center gap-2">
+          {/* <div className="flex items-center gap-2">
             <Link href="/services">
               <Button variant="outline" className="rounded-xl">
                 View all services
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
             </Link>
-          </div>
+          </div> */}
         </motion.div>
 
         <div className="mt-8">
