@@ -201,11 +201,13 @@ export function Header() {
           </div>
 
           {/* Right: Mobile CTA */}
-          <div className="md:hidden flex items-center justify-end gap-3">
-            <Button size="sm" className="bg-accent rounded hover:bg-accent/90 text-accent-foreground">
+            <div className="md:hidden flex items-center justify-end gap-3">
+            <a href={`tel:${PHONE_NUMBER}`}>
+              <Button size="sm" className="bg-accent rounded hover:bg-accent/90 text-accent-foreground">
               Call Us
-            </Button>
-          </div>
+              </Button>
+            </a>
+            </div>
 
           {/* Right: Desktop CTA */}
           <div className="hidden md:flex items-center justify-end gap-3">
