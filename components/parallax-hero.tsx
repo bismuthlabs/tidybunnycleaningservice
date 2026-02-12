@@ -62,7 +62,7 @@ export function ParallaxHero({
       <div className="absolute inset-0 -z-10">
         <motion.div
           style={{ y: bgY, scale: bgScale }}
-          className="absolute inset-0 will-change-transfor"
+          className="absolute inset-0 will-change-transform"
         >
           <Image
             src={backgroundImage || '/placeholder.svg'}
@@ -70,7 +70,7 @@ export function ParallaxHero({
             fill
             priority
             quality={92}
-            className="object-cover object-top"
+            className="object-cover object-left-top opacity-90"
           />
         </motion.div>
 
