@@ -149,7 +149,7 @@ export function HowItWorks() {
       <div ref={wrapRef}>
         <h2 className="text-4xl sm:text-5xl font-bold text-center mb-4 text-primary">How It Works</h2>
         <p className="mx-auto max-w-3xl text-center text-foreground/70">
-          Simple, predictable, premium. We guide you from quote → schedule → a hotel-level finish—every time.
+          Simple & predictable. We guide you from quote → schedule → a hotel-level finish—every time.
         </p>
 
         <div
@@ -212,7 +212,7 @@ export function HowItWorks() {
 
                   <p className="mt-2 text-xs text-foreground/65 line-clamp-2">{s.summary}</p>
 
-                  {isActive ? (
+                  {/* {isActive ? (
                     <div className="mt-3 flex items-center gap-2 text-[11px] text-foreground/55">
                       <span className="inline-flex h-5 items-center rounded-full border border-border bg-background px-2">
                         {s.timeLabel || 'Quick'}
@@ -221,15 +221,14 @@ export function HowItWorks() {
                         {clickPaused ? 'Paused while you browse' : running ? 'Auto-advancing' : 'Ready'}
                       </span>
                     </div>
-                  ) : null}
+                  ) : null} */}
                 </motion.button>
               )
             })}
           </div>
 
           {/* Detail panel */}
-          <div className="mt-8 overflow-hidden rounded-2xl border border-border bg-card shadow-sm">
-            {/* Progress bar */}
+          {/* <div className="mt-8 overflow-hidden rounded-2xl border border-border bg-card shadow-sm">
             <div className="relative h-1 bg-secondary/40">
               {running ? (
                 <motion.div
@@ -309,10 +308,10 @@ export function HowItWorks() {
                 </div>
               ) : null}
             </div>
-          </div>
+          </div> */}
 
           {/* Subtle “infinite loop” cue */}
-          <div className="mt-5 flex items-center justify-center gap-2 text-xs text-foreground/55">
+          {/* <div className="mt-5 flex items-center justify-center gap-2 text-xs text-foreground/55">
             <CalendarClock className="h-4 w-4" />
             <span>
               {reduceMotion
@@ -321,7 +320,7 @@ export function HowItWorks() {
                   ? 'Auto-advancing through steps.'
                   : 'Hover/focus pauses — click any step to explore.'}
             </span>
-          </div>
+          </div> */}
         </div>
       </div>
     </Section>
